@@ -12,6 +12,8 @@ import {
 import { cn } from "@/lib/utils";
 import { sendGAEvent } from "@next/third-parties/google";
 
+import { CONTACT_INFO } from "@/constants/images";
+
 // Definindo a interface (Tipagem)
 interface ChaleProps {
   data: {
@@ -41,7 +43,11 @@ export function ChaleCard({ data, priority = false }: ChaleProps) {
     );
   };
 
-  const whatsappLink = `https://wa.me/5535999831400?text=${encodeURIComponent(
+  // ... existing code ...
+
+  const whatsappLink = `https://wa.me/${
+    CONTACT_INFO.whatsapp
+  }?text=${encodeURIComponent(
     `Olá, gostaria de saber os valores para o ${data.nome}.`
   )}`;
 

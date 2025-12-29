@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Star } from "lucide-react";
+import { CONTACT_INFO } from "@/constants/images";
 
 export function Hero() {
   return (
@@ -38,7 +39,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="https://wa.me/5535999831400?text=Olá, gostaria de reservar meu refúgio."
+            href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Olá, gostaria de reservar meu refúgio.`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white text-lg px-8 py-4 rounded-xl font-bold transition-all transform hover:-translate-y-1 shadow-xl shadow-emerald-900/20 flex items-center justify-center gap-2"

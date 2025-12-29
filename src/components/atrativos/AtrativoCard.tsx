@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Compass, ChevronRight } from "lucide-react";
 import { sendGAEvent } from "@next/third-parties/google";
+import { CONTACT_INFO } from "@/constants/images";
 
 interface AtrativoCardProps {
   data: {
@@ -13,7 +14,9 @@ interface AtrativoCardProps {
 }
 
 export function AtrativoCard({ data }: AtrativoCardProps) {
-  const whatsappLink = `https://wa.me/5535999831400?text=${encodeURIComponent(
+  const whatsappLink = `https://wa.me/${
+    CONTACT_INFO.whatsapp
+  }?text=${encodeURIComponent(
     `Gostaria de saber mais sobre o passeio: ${data.nome}`
   )}`;
 

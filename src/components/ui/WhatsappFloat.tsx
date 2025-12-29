@@ -3,8 +3,10 @@
 import { MessageCircle } from "lucide-react";
 import { sendGAEvent } from "@next/third-parties/google"; // Importe a função
 
+import { CONTACT_INFO } from "@/constants/images";
+
 export function WhatsappFloat() {
-  const whatsappNumber = "5535999831400";
+  const whatsappNumber = CONTACT_INFO.whatsapp;
   const defaultMessage = "Olá, estou no site e gostaria de tirar uma dúvida.";
 
   const handleClick = () => {

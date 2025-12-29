@@ -77,7 +77,7 @@ export default function ContatoPage() {
                       </h4>
                       <p className="text-gray-600 text-sm">
                         {/* Formatação visual do telefone */}
-                        (35) 9 9983-1400{" "}
+                        {CONTACT_INFO.whatsappDisplay}{" "}
                         <span className="text-emerald-600 font-semibold text-xs bg-emerald-50 px-2 py-0.5 rounded-full ml-1">
                           WhatsApp
                         </span>

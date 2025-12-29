@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation"; // Importante para saber em qual página estamos
 import { sendGAEvent } from "@next/third-parties/google";
 
+import { CONTACT_INFO } from "@/constants/images";
+
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -104,7 +106,7 @@ export function Navbar() {
           </Link>
 
           <a
-            href="https://wa.me/5535999831400?text=Olá, gostaria de verificar disponibilidade."
+            href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Olá, gostaria de verificar disponibilidade.`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick("desktop")}
@@ -164,7 +166,7 @@ export function Navbar() {
             Contato
           </Link>
           <a
-            href="https://wa.me/5535999831400"
+            href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
             className="bg-emerald-600 text-white text-center py-3 rounded-lg font-bold mt-2 flex items-center justify-center gap-2"
             onClick={() => trackClick("mobile")}
           >
