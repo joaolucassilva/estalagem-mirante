@@ -105,7 +105,7 @@ export const CHALES_DATA = [
     tipo: "Luxo Casal",
     desc: "Nossa experiência premium. Desfrute de noites inesquecíveis com o crepitar da lareira e um banho relaxante de banheira. O cenário perfeito para celebrar o amor com sofisticação.",
     detalhes:
-      "Frigobar, lareira a carvão, banheira e rede na varanda. Aquecimento a gás completo.",
+      "Frigobar, lareira (salamandra) a carvão, banheira e rede na varanda. Aquecimento a gás completo.",
     icon: <Heart className="text-rose-500" />,
     destaque: true,
     images: [

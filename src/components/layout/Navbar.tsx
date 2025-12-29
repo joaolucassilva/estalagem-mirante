@@ -131,7 +131,7 @@ export function Navbar() {
           <Link
             href="/"
             onClick={() => setIsMenuOpen(false)}
-            className="text-stone-700 p-3 rounded-lg hover:bg-stone-50 font-medium border-b border-stone-50"
+            className="text-gray-700 py-2 border-b border-gray-100 text-left"
           >
             Início
           </Link>

@@ -127,7 +127,7 @@ export function ChaleCard({ data, priority = false }: ChaleProps) {
 
         <div className="space-y-3 mb-8">
           <div className="flex items-start gap-3 text-sm text-gray-500">
-            <Check size={16} className="text-emerald-500 mt-1 min-w-[16px]" />
+            <Check size={16} className="text-emerald-600 mt-1 min-w-[16px]" />
             <p>{data.detalhes}</p>
           </div>
           {data.obs && (
@@ -155,7 +155,7 @@ export function ChaleCard({ data, priority = false }: ChaleProps) {
           className={cn(
             "mt-auto w-full py-4 rounded-xl font-bold transition flex items-center justify-center gap-2",
             data.destaque
-              ? "bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-200"
+              ? "bg-emerald-700 hover:bg-emerald-800 text-white shadow-lg shadow-emerald-200"
               : "bg-stone-100 hover:bg-stone-200 text-stone-700"
           )}
         >

@@ -44,13 +44,13 @@ export function Hero() {
             className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white text-lg px-8 py-4 rounded-xl font-bold transition-all transform hover:-translate-y-1 shadow-xl shadow-emerald-900/20 flex items-center justify-center gap-2"
           >
             <Calendar size={20} />
-            Reservar Agora
+            Reservar Meu Refúgio
           </a>
           <Link
             href="/acomodacoes"
             className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 text-lg px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center hover:border-white/50"
           >
-            Conhecer Chalés
+            Escolher Chalé
           </Link>
         </div>
 
