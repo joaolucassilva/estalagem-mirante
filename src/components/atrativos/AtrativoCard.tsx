@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Compass, ChevronRight } from "lucide-react";
 import { sendGAEvent } from "@next/third-parties/google";
