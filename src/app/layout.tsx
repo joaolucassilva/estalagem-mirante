@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Fontes Otimizadas pelo Next.js
 const inter = Inter({
@@ -57,6 +58,8 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased bg-stone-50 text-stone-800">
         {children}
+
+        <SpeedInsights />
       </body>
       {gaId && <GoogleAnalytics gaId={gaId} />}
     </html>
